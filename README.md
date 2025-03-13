@@ -4,6 +4,8 @@
 - Install [Vifm](https://vifm.info/)
     - `brew install vifm` (macOS)
 - Install optional dependencies
+    - `poppler`
+        - `brew install poppler` (macOS)
     - `fd`
         - `brew install fd` (macOS)
 - Create symlink for config
