@@ -204,7 +204,7 @@ if system('uname') == 'Darwin'
     " fileviewer *.c,*.h highlight -O ansi -s dante %c
     "
     " Or leave it for automatic detection
-    " fileviewer *[^/] pygmentize -O style=monokai -f console256 -g
+    fileviewer *[^/] pygmentize -O style=default -f console256 -g
 
     " Displaying pictures in terminal
     " fileviewer *.jpg,*.png shellpic %c

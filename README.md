@@ -8,6 +8,8 @@
         - `brew install poppler` (macOS)
     - `fd`
         - `brew install fd` (macOS)
+    - `pygmentize`
+        - `brew install pygments` (macOS)
 - Create symlink for config
     - `mkdir -p ~/.config/vifm`
     - `ln -s <path-to-repo>/vifmrc ~/.config/vifm/vifmrc`
