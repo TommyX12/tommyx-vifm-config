@@ -742,19 +742,19 @@ highlight   OtherWin     cterm=none           ctermfg=238   ctermbg=NONE
 highlight   Border       cterm=none           ctermfg=238   ctermbg=NONE
 highlight   AuxWin       cterm=none           ctermfg=238   ctermbg=NONE
 
-highlight   TopLine      cterm=bold           ctermfg=250   ctermbg=24
-highlight   TopLineSel   cterm=bold           ctermfg=255   ctermbg=31
+highlight   TopLine      cterm=bold           ctermfg=250   ctermbg=27
+highlight   TopLineSel   cterm=bold           ctermfg=255   ctermbg=33
 
 highlight   CmdLine      cterm=none           ctermfg=234   ctermbg=NONE
 highlight   ErrorMsg     cterm=bold           ctermfg=160   ctermbg=NONE
-highlight   StatusLine   cterm=bold           ctermfg=255   ctermbg=24
-highlight   JobLine      cterm=bold           ctermfg=255   ctermbg=31
-highlight   SuggestBox   cterm=bold           ctermfg=255   ctermbg=31
-highlight   WildMenu     cterm=bold           ctermfg=255   ctermbg=31
+highlight   StatusLine   cterm=bold           ctermfg=255   ctermbg=27
+highlight   JobLine      cterm=bold           ctermfg=255   ctermbg=33
+highlight   SuggestBox   cterm=bold           ctermfg=255   ctermbg=39
+highlight   WildMenu     cterm=bold           ctermfg=255   ctermbg=39
 
 highlight   CurrLine     cterm=bold,inverse ctermfg=default ctermbg=default
 highlight   OtherLine    cterm=bold         ctermfg=default ctermbg=250
-highlight   Selected     cterm=bold         ctermfg=255     ctermbg=166
+highlight   Selected     cterm=bold         ctermfg=255     ctermbg=34
 highlight   LineNr       cterm=none           ctermfg=102   ctermbg=NONE
 
 highlight   Directory    cterm=bold           ctermfg=25    ctermbg=NONE
@@ -870,7 +870,7 @@ noremap ,z zz
 noremap i <C-g>
 
 " status line
-highlight User1 ctermbg=31
+highlight User1 ctermbg=33
 set statusline="%1* %t %[%0* -> %T %]%1* %= %1* %A %0* %u:%g %1* %E %0* %d %N%1* %z %1* %= %0* Free: %a/%c "
 
 set timefmt=%Y-%m-%d\ %H:%M:%S
