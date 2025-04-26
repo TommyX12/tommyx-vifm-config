@@ -576,10 +576,6 @@ if !has('win')
 	set slowfs=curlftpfs
 endif
 
-" Set custom status line look
-
-set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
-
 " ------------------------------------------------------------------------------
 
 " :mark mark /full/directory/path [filename]
@@ -849,7 +845,7 @@ else
 endif
 noremap <space>n :FZFfind<cr>
 noremap <space>if :FZFfind<cr>
-noremap <space>N :FZFfind<cr>
+noremap <space>N :FZFfinddir<cr>
 noremap <space>id :grep<space>
 
 " Use ripgrep instead of grep
@@ -871,7 +867,7 @@ noremap i <C-g>
 
 " status line
 highlight User1 ctermbg=33
-set statusline="%1* %t %[%0* -> %T %]%1* %= %1* %A %0* %u:%g %1* %E %0* %d %N%1* %z %1* %= %0* Free: %a/%c "
+set statusline="%1* %t %[%0* -> %T %]%1* %= %1* %A %0* %u:%g %1* %E %0* %d %N%1* %z %1* %= %0* %{&sort} %1* Free: %a/%c "
 
 set timefmt=%Y-%m-%d\ %H:%M:%S
 
@@ -883,3 +879,9 @@ noremap <space>t :! thunar %f &<cr>
 
 " toggle show as tree
 nnoremap T :tree!<cr>
+
+" navigate to selected item in menu
+mnoremap f gf
+
+" history
+nnoremap <space><tab> :his<cr>/

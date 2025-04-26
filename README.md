@@ -4,6 +4,10 @@
 - Install [Vifm](https://vifm.info/)
     - `brew install vifm` (macOS)
 - Install optional dependencies
+    - `fzf`
+        - See https://github.com/TommyX12/tommyx-shell
+    - `rg`
+        - `brew install ripgrep` (macOS)
     - `poppler`
         - `brew install poppler` (macOS)
     - `fd`
