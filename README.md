@@ -2,18 +2,18 @@
 
 ## Setup
 - Install [Vifm](https://vifm.info/)
-    - `brew install vifm` (macOS)
+    - MacOS: `brew install vifm`
 - Install optional dependencies
     - `fzf`
         - See https://github.com/TommyX12/tommyx-shell
     - `rg`
-        - `brew install ripgrep` (macOS)
+        - MacOS: `brew install ripgrep`
     - `poppler`
-        - `brew install poppler` (macOS)
+        - MacOS: `brew install poppler`
     - `fd`
-        - `brew install fd` (macOS)
+        - MacOS: `brew install fd` (macOS)
     - `pygmentize`
-        - `brew install pygments` (macOS)
+        - MacOS: `brew install pygments`
 - Create symlink for config
     - `mkdir -p ~/.config/vifm`
     - `ln -s <path-to-repo>/vifmrc ~/.config/vifm/vifmrc`
