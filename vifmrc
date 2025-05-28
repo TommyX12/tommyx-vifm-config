@@ -668,6 +668,11 @@ elseif executable('xsel')
 	" Yank current file path into into primary and selection clipboards
 	noremap yf :!echo -n %f:p | xsel --input --primary %i &&
 				\ echo -n %f:p | xsel --clipboard --input %i<cr>
+elseif executable('pbcopy')
+    " Yank current directory path into the clipboard
+    noremap yd :!echo -n %d | pbcopy %i<cr>
+    " Yank current file path into the clipboard
+    noremap yf :!echo -n %f:p | pbcopy %i<cr>
 endif
 vnoremap yy y
 
