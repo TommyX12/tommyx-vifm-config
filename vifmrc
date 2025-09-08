@@ -514,7 +514,7 @@ set nofollowlinks
 set sortnumbers
 
 " default sort
-set sort=+iname
+set sort=-mtime,+iname
 
 " Maximum number of changes that can be undone.
 
@@ -632,11 +632,21 @@ set vifminfo=dhistory,chistory,shistory,
 " Sample mappings
 
 " Start command in current directory
-noremap s :!<space>
-noremap S :!!<space>
+noremap <space>s :!<space>
+noremap <space>S :!!<space>
 
 " Display sorting dialog
-noremap <space>s :sort<cr>
+" sort by name
+noremap sn :set sort=+iname,-mtime<cr>
+noremap sN :set sort=-iname,-mtime<cr>
+" sort by time
+noremap st :set sort=-mtime,+iname<cr>
+noremap sT :set sort=+mtime,+iname<cr>
+" sort by size
+noremap ss :set sort=+size,+iname<cr>
+noremap sS :set sort=-size,+iname<cr>
+" display sort dialog
+noremap S :sort<cr>
 
 " Toggle visibility of preview window
 nnoremap w :view<cr>
