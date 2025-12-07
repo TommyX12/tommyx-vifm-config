@@ -695,7 +695,7 @@ vnoremap cc cw
 vnoremap A cw
 
 " Open console in current directory
-noremap t :!wezterm start --always-new-process --cwd '%d' &<cr>
+noremap t :!zellij run --cwd '%d' --close-on-exit -- zsh<cr>
 
 " Open editor to edit vifmrc and apply settings after returning to vifm
 " nnoremap ,c :write | edit $MYVIFMRC | restart full<cr>
