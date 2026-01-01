@@ -16,4 +16,4 @@
         - MacOS: `brew install pygments`
 - Create symlink for config
     - `mkdir -p ~/.config/vifm`
-    - `ln -s <path-to-repo>/vifmrc ~/.config/vifm/vifmrc`
+    - `ln -s ~/data/tommyx-vifm-config/vifmrc ~/.config/vifm/vifmrc`
