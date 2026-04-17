@@ -874,6 +874,9 @@ only
 " show hidden files
 set dotfiles
 
+" terminal title
+set title
+
 " move cursor to comfortable reading position
 noremap ,z zz
 
