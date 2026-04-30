@@ -877,6 +877,9 @@ set dotfiles
 " terminal title
 set title
 
+" dir size
+set dirsize=nitems
+
 " move cursor to comfortable reading position
 noremap ,z zz
 
