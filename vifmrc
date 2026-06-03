@@ -503,7 +503,7 @@ set trash
 
 " This is how many directories to store in the directory history.
 
-set history=100
+set history=10000
 
 " Automatically resolve symbolic links on l or Enter.
 
